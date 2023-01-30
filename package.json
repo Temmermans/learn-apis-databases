@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev:sqlite": "nodemon sqlite/index.js"
+    "dev:sqlite": "nodemon sqlite/index.js",
+    "dev:mongodb": "nodemon sqlite/index.js",
+    "dev:redis": "nodemon sqlite/index.js",
+    "dev:neo4j": "nodemon sqlite/index.js",
+    "dev:postgresql": "nodemon sqlite/index.js"
   },
   "dependencies": {
     "express": "^4.17.1",

@@ -1,6 +1,6 @@
 {
   // These tasks will run in order when initializing your CodeSandbox project.
-  "setupTasks": ["install"],
+  "setupTasks": [],
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
@@ -12,6 +12,38 @@
     "npm run dev:sqlite": {
       "name": "start SQLite server",
       "command": "yarn dev:sqlite"
+    },
+    "npm run dev:redis": {
+      "name": "start Redis server",
+      "command": "yarn dev:redis"
+    },
+    "npm run dev:redis:database": {
+      "name": "start Redis database",
+      "command": "docker-compose up cache"
+    },
+    "npm run dev:neo4j": {
+      "name": "start Neo4j server",
+      "command": "yarn dev:neo4j"
+    },
+    "npm run dev:neo4j:database": {
+      "name": "start Neo4j database",
+      "command": "docker-compose up neo4j"
+    },
+    "npm run dev:mongodb": {
+      "name": "start MongoDB server",
+      "command": "yarn dev:mongodb"
+    },
+    "npm run dev:mongodb:database": {
+      "name": "start MongoDB database",
+      "command": "docker-compose up mongodb"
+    },
+    "npm run dev:postgresql": {
+      "name": "start PostgreSQL server",
+      "command": "yarn dev:postgresql"
+    },
+    "npm run dev:postgresql:database": {
+      "name": "start PostgreSQL database",
+      "command": "docker-compose up postgresql"
     }
   }
 }
